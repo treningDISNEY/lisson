@@ -17,3 +17,27 @@ struct Work5 {
         }
     }
 }
+
+
+let columnHight = 10
+let dayDistanceProgress = 2
+let nightDistanceProgress = -1
+
+var distance = 0
+var isDay = true
+var numberOfDay = 0
+
+while distance < columnHight {
+    if isDay {
+        distance += dayDistanceProgress
+        numberOfDay += 1
+        isDay = false
+    } else {
+        distance += nightDistanceProgress
+        isDay = true
+    }
+}
+
+numberOfDay
+
+//решал вместе с ним, сам не допер как, теперь разобрался
